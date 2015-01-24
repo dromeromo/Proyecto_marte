@@ -5,6 +5,7 @@
  */
 package test;
 
+import java.io.FileNotFoundException;
 import proyecto_marte.Leer;
 import org.testng.annotations.Test;
 
@@ -16,9 +17,9 @@ import org.testng.annotations.Test;
 public class Leer_achivoTest {
     
     @Test
-    public void leerTest()
+    public void leerTest() throws FileNotFoundException
     {
-        Leer leer = new Leer();
+        Leer leer = new Leer("C:/Users/Andres/");
         
     }
     
