@@ -19,7 +19,7 @@ public class Leer_achivoTest {
     @Test
     public void leerTest() throws FileNotFoundException
     {
-        Leer leer = new Leer("C:/Users/Andres/");
+        Leer leer = new Leer("C:/Users/Andres/Desktop/exploradores.txt");
         
     }
     
