@@ -18,10 +18,8 @@ public class Leer_achivoTest {
     
     
     @Test
-    public void leerTest() throws FileNotFoundException
-    {
-        Leer leer = new Leer("C:/Users/Andres/Desktop/exploradores.txt"); // envia un String al constructor con la direccion de la ruta
-        
+    public void noexiste() throws FileNotFoundException{
+        Leer leer = new Leer("C:/Users/Andres/Desktop/exploradores.txt");        
     }
     
     

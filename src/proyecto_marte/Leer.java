@@ -20,10 +20,22 @@ public class Leer {
     public FileReader fr=null;
     public BufferedReader br = null;
 
-    public Leer(String archivo) throws FileNotFoundException {
-        this.documento = new File(archivo);
-        this.fr = new FileReader(archivo);
-        this.br = new BufferedReader(fr);
+    public Leer(String cadena) throws FileNotFoundException {
+        noExiste(cadena);
        }
+
+    public void noExiste(String archivo) throws FileNotFoundException {
+        documento = new File(archivo);
+        if(documento.exists())
+        {
+         this.fr = new FileReader(archivo);
+         this.br = new BufferedReader(fr);   
+        }
+        else
+        {
+            System.out.println("El fichero no existe");
+        }
+        
+    }
     
 }
