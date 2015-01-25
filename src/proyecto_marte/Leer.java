@@ -24,7 +24,7 @@ public class Leer {
         noExiste(cadena);
        }
 
-    public void noExiste(String archivo) throws FileNotFoundException {
+    public void noExiste(String archivo) throws FileNotFoundException {// metodo que comprueba que existe el archivo 
         documento = new File(archivo);
         if(documento.exists())
         {
