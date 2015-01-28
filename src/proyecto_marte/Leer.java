@@ -16,9 +16,9 @@ import java.io.FileReader;
  */
 public class Leer {
     
-    public File documento=null;
-    public FileReader fr=null;
-    public BufferedReader br = null;
+    private File documento=null;
+    private  FileReader fr=null;
+    private BufferedReader br = null;
 
     public Leer(String cadena) throws FileNotFoundException {
         noExiste(cadena);
